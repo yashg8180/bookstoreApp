@@ -2,9 +2,9 @@
     {
         "id":1,
         "name":"story book",
-        "title":"yashd faisdshnfioauhkbnkjfnoailkn",
+        "title":"yash",
         "price":0,
-        "category":"Free",
+        "category":"sport",
         "image":"https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=a8bffeb6-7d5d-4843-b959-2aed797d2690"
     
     },
@@ -13,7 +13,7 @@
         "name":"sport book",
         "title":"yashd faisdshnfioauhkbnkjfnoailkn",
         "price":58,
-        "category":"Free",
+        "category":"sport",
         "image":"https://www.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_24307396.htm#fromView=search&page=1&position=0&uuid=a8bffeb6-7d5d-4843-b959-2aed797d2690"
     
     },

@@ -24,7 +24,8 @@ function Signup() {
     };
 
     try {
-      const response = await axios.post("http://localhost:4002/user/signup", userInfo);
+       const response = await axios.post("http://localhost:4002/user/signup", userInfo);
+      // const response = await axios.post("/user/signup", userInfo);
       console.log(response.data);
       toast.success("Signup Successfully");
       localStorage.setItem("Users", JSON.stringify(response.data.user));

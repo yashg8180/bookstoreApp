@@ -9,4 +9,6 @@ const bookSchema=mongoose.Schema({
 })
 
 const Book=mongoose.model("Book",bookSchema)
+//"Book" wale collection mai store hoga sab data
+ 
 export default Book;

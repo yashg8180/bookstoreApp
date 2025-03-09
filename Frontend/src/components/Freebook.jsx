@@ -13,9 +13,10 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4002/book");
+         const res = await axios.get("http://localhost:4002/book");
+        // const res = await axios.get("/book");
         console.log(res.data);
-        const data=res.data.filter((data)=>data.category==="Free")
+        const data=res.data.filter((data)=>data.price==0)
         setBook(data);
       } catch (error) {
         console.log(error);
@@ -25,7 +26,6 @@ function Freebook() {
   }, []);
 
 
-   
     var settings = {
         dots: true,
         infinite: false,
@@ -64,11 +64,9 @@ function Freebook() {
   return (<>
     <div className='max-w-screen-2xl container mx-auto md:px-20 px-4'>
         <div>
-        <h1 className='font-bold text-xl pb-2' >Free offered courses</h1>
+        <h1 className='font-bold text-xl pb-2' >Free offered books</h1>
         <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor,
-              et totam. Tempora amet atque expedita, quae corrupti totam sed
-              pariatur corporis at veniam est voluptas animi!
+        Explore our collection of free books at bookStore and discover your next great read without spending a dime!
         </p>
         </div>
     

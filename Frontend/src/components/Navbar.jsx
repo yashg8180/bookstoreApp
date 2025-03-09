@@ -12,6 +12,8 @@ function Navbar() {
       const element=document.documentElement;
       useEffect(()=>{
         if(theme==="dark"){
+          element.classList.remove("light")
+          document.body.classList.remove("light")
         element.classList.add("dark");
         localStorage.setItem("theme","dark")
         document.body.classList.add("dark")
@@ -19,6 +21,8 @@ function Navbar() {
             element.classList.remove("dark")
             localStorage.setItem("theme","light")
             document.body.classList.remove("dark")
+            element.classList.add("light");
+            document.body.classList.add("light")
         }
 
       },[theme])

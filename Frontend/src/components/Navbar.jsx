@@ -6,7 +6,7 @@ import {useAuth} from "../context/AuthProvider"
 function Navbar() {
       
   const [authUser,setAuthUser]=useAuth();
-      console.log(authUser);
+      // console.log(authUser);
       
       const[theme,setTheme]=useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
       const element=document.documentElement;
@@ -47,7 +47,7 @@ function Navbar() {
       <li><a href='/'>Home</a></li>
       <li><a href='/course'>Course</a></li>
       <li><a href='/contact'>Contacts</a></li>
-      <li><a>About</a></li>
+      <li><a href='/about'>About</a></li>
         </>
 
     );
@@ -79,7 +79,7 @@ function Navbar() {
        {navItems}
       </ul>
     </div>
-    <a className=" text-2xl font-bold cursor-pointer">bookStore</a>
+    <a className=" text-2xl font-bold cursor-pointer">BookStore</a>
   </div>
   <div className="navbar-end space-x-3">
   <div className="navbar-center hidden lg:flex">

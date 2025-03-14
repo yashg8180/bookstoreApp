@@ -10,6 +10,7 @@ import {useAuth} from "../src/context/AuthProvider"
 import BookDetails from "./components/BookDetails";
 import Checkout from "./components/Checkout";
 import Payment from "./components/payment";
+import About from './components/about'
 function App() {
   const [authUser,setAuthUser]=useAuth();
       console.log(authUser);
@@ -24,7 +25,7 @@ function App() {
     <Route path="/book-details" element={<BookDetails />} />
     <Route path="/checkout" element={<Checkout />} />
     <Route path="/payment" element={<Payment />} />
-
+    <Route path="/about" element={<About />} />
   </Routes>
   <Toaster/>
   </div>

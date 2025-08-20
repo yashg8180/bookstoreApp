@@ -1,0 +1,283 @@
+[
+    {
+      "id": 1,
+      "name": "The Art of Football",
+      "title": "Football",
+      "price": 16,
+      "category": "sport"
+    },
+    {
+      "id": 2,
+      "name": "Incredible Basketball Moments",
+      "title": "football match",
+      "price": 13,
+      "category": "news"
+    },
+    {
+      "id": 3,
+      "name": "Tennis Legends: A History",
+      "title": "tennis championship",
+      "price": 20,
+      "category": "sports"
+    },
+    {
+      "id": 4,
+      "name": "Basketball Analytics Guide",
+      "title": "basketball game analysis",
+      "price": 0,
+      "category": "sport"
+    },
+    {
+      "id": 5,
+      "name": "Success Stories of Athletes",
+      "title": "athlete's success story",
+      "price": 15,
+      "category": "interview"
+    },
+    {
+      "id": 6,
+      "name": "Olympic Glory: Highlights",
+      "title": "Olympic highlights",
+      "price": 25,
+      "category": "highlights"
+    },
+    {
+      "id": 7,
+      "name": "Football Tactics Demystified",
+      "title": "football tactics",
+      "price": 17,
+      "category": "tactics"
+    },
+    {
+      "id": 8,
+      "name": "The Future of Sports",
+      "title": "future of sports",
+      "price": 12,
+      "category": "opinion"
+    },
+    {
+      "id": 9,
+      "name": "Equipment Review: Sports Essentials",
+      "title": "sports equipment",
+      "price": 30,
+      "category": "equipment"
+    },
+    {
+      "id": 10,
+      "name": "Latest Sports Events: Updates",
+      "title": "latest sports events",
+      "price": 8,
+      "category": "events"
+    },
+    {
+      "id": 11,
+      "name": "Introduction to Physics",
+      "title": "fundamentals of physics",
+      "price": 20,
+      "category": "science"
+    },
+    {
+      "id": 12,
+      "name": "History of World War II",
+      "title": "war history",
+      "price": 0,
+      "category": "history"
+    },
+    {
+      "id": 13,
+      "name": "The Art of Cooking",
+      "title": "culinary delights",
+      "price": 11,
+      "category": "food"
+    },
+    {
+      "id": 14,
+      "name": "Business Strategies",
+      "title": "strategic management",
+      "price": 23,
+      "category": "business"
+    },
+    {
+      "id": 15,
+      "name": "Psychology of Happiness",
+      "title": "joyful living",
+      "price": 16,
+      "category": "psychology"
+    },
+    {
+      "id": 16,
+      "name": "Art History: Renaissance",
+      "title": "renaissance art",
+      "price": 19,
+      "category": "art"
+    },
+    {
+      "id": 17,
+      "name": "Environmental Science",
+      "title": "ecological balance",
+      "price": 14,
+      "category": "science"
+    },
+    {
+      "id": 18,
+      "name": "Literature Classics",
+      "title": "timeless novels",
+      "price": 0,
+      "category": "literature"
+    },
+    {
+      "id": 19,
+      "name": "Mathematics: Problem Solving",
+      "title": "mathematical puzzles",
+      "price": 11,
+      "category": "mathematics"
+    },
+    {
+      "id": 20,
+      "name": "Health and Fitness Guide",
+      "title": "wellness strategies",
+      "price": 27,
+      "category": "health"
+    },
+    {
+      "id": 21,
+      "name": "Philosophy: Existentialism",
+      "title": "existential thoughts",
+      "price": 22,
+      "category": "philosophy"
+    },
+    {
+      "id": 22,
+      "name": "Technology Trends",
+      "title": "future tech innovations",
+      "price": 0,
+      "category": "technology"
+    },
+    {
+      "id": 23,
+      "name": "Fashion Design Essentials",
+      "title": "styling techniques",
+      "price": 15,
+      "category": "fashion"
+    },
+    {
+      "id": 24,
+      "name": "Music Theory: Harmony",
+      "title": "musical composition",
+      "price": 13,
+      "category": "music"
+    },
+    {
+      "id": 25,
+      "name": "Sociology of Urbanization",
+      "title": "urban studies",
+      "price": 18,
+      "category": "sociology"
+    },
+    {
+      "id": 26,
+      "name": "Travel Destinations: Exploration",
+      "title": "world adventures",
+      "price": 23,
+      "category": "travel"
+    },
+    {
+      "id": 27,
+      "name": "Engineering Innovations",
+      "title": "modern engineering marvels",
+      "price": 30,
+      "category": "engineering"
+    },
+    {
+      "id": 28,
+      "name": "Communication Skills",
+      "title": "effective communication techniques",
+      "price": 0,
+      "category": "communication"
+    },
+    {
+      "id": 29,
+      "name": "Astrophysics: Exploring the Universe",
+      "title": "cosmic mysteries",
+      "price": 0,
+      "category": "science"
+    },
+    {
+      "id": 30,
+      "name": "Political History: Global Perspectives",
+      "title": "world politics",
+      "price": 0,
+      "category": "history"
+    },
+    {
+      "id": 31,
+      "name": "Gastronomy and Culture",
+      "title": "culinary traditions",
+      "price": 17,
+      "category": "food"
+    },
+    {
+      "id": 32,
+      "name": "Entrepreneurship Principles",
+      "title": "startup strategies",
+      "price": 0,
+      "category": "business"
+    },
+    {
+      "id": 33,
+      "name": "Positive Psychology",
+      "title": "well-being secrets",
+      "price": 0,
+      "category": "psychology"
+    },
+    {
+      "id": 34,
+      "name": "Modern Art Movements",
+      "title": "contemporary art trends",
+      "price": 19,
+      "category": "art"
+    },
+    {
+      "id": 35,
+      "name": "Climate Change Studies",
+      "title": "environmental challenges",
+      "price": 15,
+      "category": "science"
+    },
+    {
+      "id": 36,
+      "name": "Literary Masterpieces",
+      "title": "classic novels revisited",
+      "price": 0,
+      "category": "literature"
+    },
+    {
+      "id": 37,
+      "name": "Advanced Calculus",
+      "title": "mathematical analysis",
+      "price": 23,
+      "category": "mathematics"
+    },
+    {
+      "id": 38,
+      "name": "Fitness and Nutrition Guide",
+      "title": "healthy lifestyle tips",
+      "price": 29,
+      "category": "health"
+    },
+    {
+      "id": 39,
+      "name": "Ethics and Morality",
+      "title": "ethical dilemmas",
+      "price": 0,
+      "category": "philosophy"
+    },
+    {
+      "id": 40,
+      "name": "Artificial Intelligence",
+      "title": "AI advancements",
+      "price": 25,
+      "category": "technology"
+    }
+  ]
+  

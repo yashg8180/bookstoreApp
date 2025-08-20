@@ -5,8 +5,12 @@ const bookSchema=mongoose.Schema({
     price:String,
     category:String,
     image:String,
+<<<<<<< HEAD
     title:String,
     description:String
+=======
+    title:String
+>>>>>>> 51e4a54e02018e3fb608358c6f59581f44086b9c
 })
 
 const Book=mongoose.model("Book",bookSchema)

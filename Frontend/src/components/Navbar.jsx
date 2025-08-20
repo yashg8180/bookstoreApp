@@ -48,6 +48,7 @@ function Navbar() {
       <li><a href='/course'>Course</a></li>
       <li><a href='/contact'>Contacts</a></li>
       <li><a href='/about'>About</a></li>
+      <li><a href='/add-book'>Add Book</a></li>
         </>
 
     );

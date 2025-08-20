@@ -6,8 +6,7 @@ const bookSchema=mongoose.Schema({
     category:String,
     image:String,
     title:String,
-    description:String,
-    title:String
+    description:String
 
 })
 

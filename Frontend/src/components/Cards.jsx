@@ -49,8 +49,7 @@ function Cards({ item }) {
             <p>{item.title}</p>
             <div className="card-actions flex justify-between">
               <div className="badge badge-outline">${item.price}</div>
-              {/* ✅ Passing full book data in state */}
-              <Link to="/book-details" state={{ book: item }}>
+              <Link to={`/book-details/${item._id}`}>
                 <div className="hover:bg-pink-500 duration-200 hover:text-white cursor-pointer px-2 py-1 rounded-full border-[2px]">
                   View Details
                 </div>

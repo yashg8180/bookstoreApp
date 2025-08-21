@@ -2,10 +2,13 @@ import React, { useEffect, useState } from 'react'
 import Login from './Login';
 import Logout from './Logout';
 import {useAuth} from "../context/AuthProvider"
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
       
   const [authUser,setAuthUser]=useAuth();
+const [searchQuery, setSearchQuery] = useState('');
+const navigate = useNavigate();
       // console.log(authUser);
       
       const[theme,setTheme]=useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
@@ -42,13 +45,20 @@ function Navbar() {
         window.removeEventListener('scroll',handleScrool)
        }
     },[])
-    const navItems=(
+    const handleSearch = () => {
+    if (searchQuery.trim()) {
+      navigate(`/recommend/${searchQuery.trim()}`);
+    }
+  };
+
+const navItems=(
         <>
       <li><a href='/'>Home</a></li>
       <li><a href='/course'>Course</a></li>
       <li><a href='/contact'>Contacts</a></li>
       <li><a href='/about'>About</a></li>
       <li><a href='/add-book'>Add Book</a></li>
+
         </>
 
     );
@@ -91,16 +101,34 @@ function Navbar() {
   </div>
   <div className='hidden md:block'>
   <label className="input input-bordered px-3 py-2 flex items-center gap-2">
-  <input type="text" className="grow dark:bg-slate-900 dark:text-white " placeholder="Search" />
+  <input
+    type="text"
+    className="grow dark:bg-slate-900 dark:text-white "
+    placeholder={
+            authUser
+              ? "Find your favorite read..."
+              : "Login to see suggestions"
+          }
+    value={searchQuery}
+    onChange={(e) => setSearchQuery(e.target.value)}
+    onKeyPress={(e) => {
+      if (e.key === 'Enter') {
+        handleSearch();
+      }
+    }}
+  />
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
     fill="currentColor"
-    className="h-4 w-4 opacity-70">
+    className="h-4 w-4 opacity-70 cursor-pointer"
+    onClick={handleSearch}
+  >
     <path
       fillRule="evenodd"
       d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-      clipRule="evenodd" />
+      clipRule="evenodd"
+    />
   </svg>
 </label>
 </div>

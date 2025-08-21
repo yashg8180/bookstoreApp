@@ -12,6 +12,7 @@ import Checkout from "./components/Checkout";
 import Payment from "./components/payment";
 import About from './components/about'
 import AddBook from './components/AddBook';
+import RecommendationPage from './components/RecommPage';
 function App() {
   const [authUser,setAuthUser]=useAuth();
       console.log(authUser);
@@ -28,6 +29,7 @@ function App() {
     <Route path="/payment" element={<Payment />} />
     <Route path="/about" element={<About />} />
     <Route path='/add-book' element={authUser?<AddBook/> : <Navigate to="/signup"/>}/>
+    <Route path="/recommend/:query" element={authUser?<RecommendationPage />: <Navigate to="/signup"/>} />
   </Routes>
   <Toaster/>
   </div>

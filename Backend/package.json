@@ -7,8 +7,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": " node index.js",
-    "dev":"nodemon index.js",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix Frontend && npm run build --prefix Frontend"
+    "dev": "nodemon index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Frontend && npm run build --prefix Frontend"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongoose": "^8.4.4",
+    "natural": "^8.1.0",
     "nodemon": "^3.1.4"
   }
 }

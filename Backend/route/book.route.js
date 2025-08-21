@@ -8,7 +8,7 @@
 
 // export default router;
 import express from "express";
-import { getBook, getSingleBook, addBook } from "../controller/book.controller.js";
+import { getBook, getSingleBook, addBook, recommendBooks } from "../controller/book.controller.js";
 
 const router = express.Router();
 
@@ -20,5 +20,8 @@ router.get("/:id", getSingleBook);
 
 // Add a new book
 router.post("/add", addBook);
+
+// ✅ Recommendation endpoint
+router.get("/recommend/:query", recommendBooks);
 
 export default router;

@@ -30,6 +30,28 @@ export const addBook = async (req, res) => {
   }
 }
 
+// Add multiple books at once
+export const addBooksBulk = async (req, res) => {
+  try {
+    const booksData = req.body; // expecting an array of book objects
+
+    if (!Array.isArray(booksData)) {
+      return res.status(400).json({ message: "Data must be an array of books" });
+    }
+
+    const insertedBooks = await Book.insertMany(booksData);
+    res.status(201).json({ 
+      message: "Books added successfully", 
+      count: insertedBooks.length, 
+      books: insertedBooks 
+    });
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).json(error);
+  }
+};
+
+
 
 export const getSingleBook = async (req, res) => {
   try {

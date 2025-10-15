@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { AuthContext } from '../context/AuthProvider';
+import { useAuth } from '../context/AuthProvider';
 
 export default function AddBook() {
   const [bookData, setBookData] = useState({
@@ -11,6 +13,7 @@ export default function AddBook() {
     price: '',
     category: ''
   });
+  const [authUser,setAuthUser]=useAuth();
   const [jsonFile, setJsonFile] = useState(null);
   const fileInputRef = useRef(null);
   const navigate = useNavigate();
@@ -103,7 +106,7 @@ export default function AddBook() {
     };
     reader.readAsText(jsonFile);
   };
-
+// if(authUser.role!=='admin'){ return<p>you dont have access</p>}
   return (
     <div className="max-w-md mx-auto mt-10 p-6 bg-base-200 rounded-lg shadow-md">
         <h2 className="text-2xl font-bold mb-6">📚 Add Books</h2>
@@ -120,7 +123,7 @@ export default function AddBook() {
         />
         <button
           onClick={handleBulkSubmit}
-          className="w-full bg-green-500 text-white py-2 px-4 rounded hover:bg-green-600"
+          className="w-full bg-pink-500 text-white py-2 px-4 rounded hover:bg-pink-600"
         >
           Upload JSON File
         </button>

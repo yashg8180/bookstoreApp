@@ -1,9 +1,21 @@
 import React from "react";
 import { FaBookOpen, FaShippingFast, FaUsers, FaAward } from "react-icons/fa";
+// import { navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div className="max-w-7xl mx-auto p-6 bg-gradient-to-br from-blue-900 to-violet-900 text-white shadow-lg rounded-lg mt-10">
+
+      {/* 🔙 Back Button */}
+      <button
+              className="bg-gray-400 dark:bg-gray-700 text-white px-6 py-2 rounded-md hover:bg-gray-600 transition-all duration-300"
+              onClick={() => navigate(-1)}
+            >
+              Back
+            </button>
+
       {/* Hero Section */}
       <div className="flex flex-col md:flex-row items-center mb-12">
         <div className="md:w-1/2">
